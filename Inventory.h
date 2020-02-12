@@ -5,6 +5,7 @@
 using std::string;
 using std::ostream;
 
+/* Inventory class stores important product statistics and decrements stock of items after sale */
 class Inventory
 {
   private:
