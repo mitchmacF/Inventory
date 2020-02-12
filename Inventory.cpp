@@ -4,7 +4,8 @@
 
 using std::string;
 using std::ostream;
-  
+
+/* Class constructor */
 Inventory::Inventory(string name, float price, int count)
 {
   m_name = name;
@@ -12,11 +13,13 @@ Inventory::Inventory(string name, float price, int count)
   m_in_stock = count;
 }
 
+/* After sale of product, decrements number of that product in stock */
 void Inventory::sell()
 {
   m_in_stock--;
 }
 
+/* Allows input for product statistics */
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   stream << item.m_name 
