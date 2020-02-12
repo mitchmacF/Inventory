@@ -4,6 +4,7 @@
 
 using std::string;
 using std::ostream;
+using std::cout;
 
 /* Class constructor */
 Inventory::Inventory(string name, float price, int count)
@@ -19,7 +20,7 @@ void Inventory::sell()
   if(m_in_stock > 0)
       m_in_stock--;
   else 
-      cout << "Sorry, that item is out of stock" << endl;
+      cout << "Sorry, that item is out of stock";
 }
 
 /* Allows constant stream of input for product statistics until user wants to quit application */
