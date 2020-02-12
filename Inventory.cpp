@@ -16,7 +16,10 @@ Inventory::Inventory(string name, float price, int count)
 /* After sale of product, decrements number of that product in stock */
 void Inventory::sell()
 {
-  m_in_stock--;
+  if(m_in_stock > 0)
+      m_in_stock--;
+  else 
+      cout << "Sorry, that item is out of stock" << endl;
 }
 
 /* Allows constant stream of input for product statistics until user wants to quit application */
