@@ -1,0 +1,5 @@
+language: cpp
+os: linux
+script:
+    - g++ -std=c++11 -Wfatal-errors *.cpp
+
