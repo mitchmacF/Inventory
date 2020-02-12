@@ -19,7 +19,7 @@ void Inventory::sell()
   m_in_stock--;
 }
 
-/* Allows input for product statistics */
+/* Allows constant stream of input for product statistics until user wants to quit application */
 ostream& operator<<(ostream& stream, const Inventory& item)
 {
   stream << item.m_name 
